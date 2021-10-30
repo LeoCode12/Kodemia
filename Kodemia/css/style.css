@@ -37,6 +37,7 @@ article > p{
     font-weight: bold;
     background-color: indigo;
     color: hsl(0, 0%, 98%);
+    transition: all 1s ease-in-out;
 }
 
 
