@@ -1,0 +1,66 @@
+1. Escribe el selector de CSS correspondiente a los siguientes enunciados:
+
+- Selecciona todos los elementos del tipo párrafo que tengan la clase main-text.
+p.main-text{}
+
+- Selecciona todos los elementos de lista pares dentro de una lista no ordenada
+ul > li:nth-of-type(even){}
+
+- Selecciona los links visitados dentro de una barra de navegación
+a:visited{}
+
+- Selecciona la imagen que sea descendiente inmediato de una card sobre la que se 
+coloca el puntero del mouse
+.card img:hover{}
+
+
+- Selecciona la primer sección que se encuentre dentro de una etiqueta main
+.etiqueta section:first-child{}
+
+- Selecciona cualquier elemento que incluya en su classlist el texto "btn"
+button[class="btn"]{}
+
+- Selecciona todos los botones excepto aquellos que sean el último hijo
+button:not(last-child){}
+
+
+
+
+
+1. Describe qué elemento será seleccionado con base en los siguientes selectores:
+
+```jsx
+header#main-header > ul
+todos los ul dentro del header con el id main-header
+```
+
+```jsx
+aside ul li:not(even)
+la lista no ordenada dentro del aside que no sean pares
+```
+
+```jsx
+section#posts article:nth-of-type( odd )
+todo article de tipo par que est4en dentro de la section con id posts
+```
+
+```jsx
+table tr td
+los td descendientes de tr y descendiente de table
+```
+
+```jsx
+footer > ul li a.nav-link
+la etiqueta a con clase nav-link de una lista no ordenada dentro del footer
+```
+
+```jsx
+p span.text-white
+span con clase text-white descendiente de un p
+```
+
+```jsx
+section.bg-dark p.text-white span
+selecciona span descendiente de un p con clase text-white descendiente de un section
+con clase bg-dark
+```
