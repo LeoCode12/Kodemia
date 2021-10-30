@@ -11,11 +11,11 @@ a:visited{}
 
 - Selecciona la imagen que sea descendiente inmediato de una card sobre la que se 
 coloca el puntero del mouse
-.card img:hover{}
+.card:hover img{}
 
 
 - Selecciona la primer sección que se encuentre dentro de una etiqueta main
-.etiqueta section:first-child{}
+main section:first-of-type{}
 
 - Selecciona cualquier elemento que incluya en su classlist el texto "btn"
 button[class="btn"]{}
@@ -31,17 +31,17 @@ button:not(last-child){}
 
 ```jsx
 header#main-header > ul
-todos los ul dentro del header con el id main-header
+todos los ul hijo de etiqueta header con id main-header
 ```
 
 ```jsx
 aside ul li:not(even)
-la lista no ordenada dentro del aside que no sean pares
+la lista no ordenada no pares dentro del ul dentro de aside
 ```
 
 ```jsx
 section#posts article:nth-of-type( odd )
-todo article de tipo par que est4en dentro de la section con id posts
+todo article de tipo impar que esten dentro de la section con id posts
 ```
 
 ```jsx
@@ -51,7 +51,7 @@ los td descendientes de tr y descendiente de table
 
 ```jsx
 footer > ul li a.nav-link
-la etiqueta a con clase nav-link de una lista no ordenada dentro del footer
+la etiqueta a con clase nav-link de una lista no ordenada hijp del footer
 ```
 
 ```jsx
@@ -61,6 +61,6 @@ span con clase text-white descendiente de un p
 
 ```jsx
 section.bg-dark p.text-white span
-selecciona span descendiente de un p con clase text-white descendiente de un section
+selecciona span descendiente dentro de un p con clase text-white descendiente de un section
 con clase bg-dark
 ```
